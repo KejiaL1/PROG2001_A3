@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
 
 public class ChaosLevelManager : MonoBehaviour
@@ -26,6 +26,10 @@ public class ChaosLevelManager : MonoBehaviour
     [Tooltip("Displays game result (Success/Failure)")]
     public TextMeshProUGUI gameResultText;
 
+    [Header("Player Car")]
+    public Transform carTransform;       // æ‹–å…¥æ±½è½¦å¯¹è±¡
+    public float fallThresholdY = -10f;  // æ±½è½¦æ‰å‡ºåœºæ™¯çš„ Y å€¼
+
     private bool gameActive = true;
 
     void Start()
@@ -51,10 +55,20 @@ public class ChaosLevelManager : MonoBehaviour
                 EndGame();
             }
         }
+
+        // âœ… æ–°å¢ï¼šæ£€æµ‹æ‰å‡ºåœºæ™¯å¤±è´¥
+        if (gameActive && carTransform.position.y < fallThresholdY)
+        {
+            gameActive = false;
+            if (gameResultText != null)
+            {
+                gameResultText.text = "Failed! Car fell out of the scene!";
+            }
+        }
     }
 
     /// <summary>
-    /// ÓÎÏ·½áÊøÊ±£¬¸ù¾İµ±Ç°µÄ»ìÂÒ³Ì¶ÈÏÔÊ¾³É¹¦»òÊ§°ÜĞÅÏ¢
+    /// æ¸¸æˆç»“æŸæ—¶ï¼Œæ ¹æ®å½“å‰çš„æ··ä¹±ç¨‹åº¦æ˜¾ç¤ºæˆåŠŸæˆ–å¤±è´¥ä¿¡æ¯
     /// </summary>
     private void EndGame()
     {
@@ -69,7 +83,7 @@ public class ChaosLevelManager : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸üĞÂÏÔÊ¾µ±Ç°»ìÂÒ³Ì¶ÈµÄ UI ÎÄ±¾
+    /// æ›´æ–°æ˜¾ç¤ºå½“å‰æ··ä¹±ç¨‹åº¦çš„ UI æ–‡æœ¬
     /// </summary>
     private void UpdateChaosUI()
     {
@@ -78,7 +92,7 @@ public class ChaosLevelManager : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸üĞÂÏÔÊ¾Ê£ÓàÊ±¼äµÄ UI ÎÄ±¾
+    /// æ›´æ–°æ˜¾ç¤ºå‰©ä½™æ—¶é—´çš„ UI æ–‡æœ¬
     /// </summary>
     private void UpdateTimerUI()
     {
@@ -87,7 +101,7 @@ public class ChaosLevelManager : MonoBehaviour
     }
 
     /// <summary>
-    /// µ±Æû³µ·¢ÉúÅö×²Ê±£¬¸ù¾İÅö×²ÎïÌåµÄ Rigidbody ÖÊÁ¿ÀÛ¼Ó»ìÂÒ³Ì¶ÈµÃ·Ö
+    /// å½“æ±½è½¦å‘ç”Ÿç¢°æ’æ—¶ï¼Œæ ¹æ®ç¢°æ’ç‰©ä½“çš„ Rigidbody è´¨é‡ç´¯åŠ æ··ä¹±ç¨‹åº¦å¾—åˆ†
     /// </summary>
     private void OnCollisionEnter(Collision collision)
     {
