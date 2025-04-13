@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Car : MonoBehaviour
+public class CarControl : MonoBehaviour
 {
 
     //CAR SETUP
@@ -14,11 +14,11 @@ public class Car : MonoBehaviour
     public int maxSpeed = 200; //The maximum speed that the car can reach in km/h.
     [Range(20, 300)]
     public int maxReverseSpeed = 100; //The maximum speed that the car can reach while going on reverse in km/h.
-    [Range(1, 20)]
-    public int accelerationMultiplier = 2; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
+    [Range(1, 200)]
+    public int accelerationMultiplier = 20; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
     [Space(10)]
-    [Range(1, 60)]
-    public int maxSteeringAngle = 27; // The maximum angle that the tires can reach while rotating the steering wheel.
+    [Range(1, 70)]
+    public int maxSteeringAngle = 60; // The maximum angle that the tires can reach while rotating the steering wheel.
     [Range(0.1f, 1f)]
     public float steeringSpeed = 0.5f; // How fast the steering wheel turns.
     [Space(10)]
@@ -408,7 +408,7 @@ public class Car : MonoBehaviour
             try
             {
                 float absoluteCarSpeed = Mathf.Abs(carSpeed);
-                carSpeedText.text = Mathf.RoundToInt(absoluteCarSpeed).ToString();
+                carSpeedText.text = Mathf.RoundToInt(absoluteCarSpeed / 10f).ToString();
             }
             catch (Exception ex)
             {
