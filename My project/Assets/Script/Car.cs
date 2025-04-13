@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CarControl : MonoBehaviour
+public class Car : MonoBehaviour
 {
 
     //CAR SETUP
@@ -14,7 +14,7 @@ public class CarControl : MonoBehaviour
     public int maxSpeed = 200; //The maximum speed that the car can reach in km/h.
     [Range(20, 300)]
     public int maxReverseSpeed = 100; //The maximum speed that the car can reach while going on reverse in km/h.
-    [Range(1, 100)]
+    [Range(1, 20)]
     public int accelerationMultiplier = 2; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
     [Space(10)]
     [Range(1, 60)]
