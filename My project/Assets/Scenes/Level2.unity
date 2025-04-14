@@ -2449,9 +2449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab7b444596f2fd4783b7be6c660aaa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 400
-  maxReverseSpeed: 200
-  accelerationMultiplier: 20
+  maxSpeed: 200
+  maxReverseSpeed: 100
+  accelerationMultiplier: 40
   maxSteeringAngle: 60
   steeringSpeed: 0.5
   brakeForce: 350
@@ -2502,7 +2502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721c17d5a2b02454a8524c7590bdbeb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreMultiplier: 0.2
+  scoreMultiplier: 0.15
   targetChaosLevel: 100
   currentChaosLevel: 0
   chaosLevelText: {fileID: 333598309}
