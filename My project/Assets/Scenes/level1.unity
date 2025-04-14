@@ -3454,6 +3454,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d51484289d125e48b3eecf5fbd4d7c9, type: 3}
+--- !u!1 &578100096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1137856950933181306, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
+  m_PrefabInstance: {fileID: 2090239110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &581450975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4229638173825476, guid: 59f2f37d570039d41891cb6cb0bf2011, type: 3}
@@ -3948,6 +3953,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &1084921062 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 6646994362376958012, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
+  m_PrefabInstance: {fileID: 2090239110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1099773093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4580,6 +4590,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283076168}
   m_Mesh: {fileID: 4300000, guid: f26c7cb76932f5949bf42e08a1f46cea, type: 3}
+--- !u!1 &1353952335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2415459211290686151, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
+  m_PrefabInstance: {fileID: 2090239110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1427618162
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,6 +5163,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490491554}
   m_Mesh: {fileID: 991503290360816269, guid: cdb7a51bd0d53ca4cbc56ece42a4b5ab, type: 3}
+--- !u!146 &1492928563 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 6735608647287428429, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
+  m_PrefabInstance: {fileID: 2090239110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!146 &1495512321 stripped
 WheelCollider:
   m_CorrespondingSourceObject: {fileID: 5044983487755827366, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
@@ -5911,6 +5931,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!146 &1663356275 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 4379435477819852513, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
+  m_PrefabInstance: {fileID: 2090239110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1743785906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7767421569539538106, guid: cacb113296c6b574f9ee6f490eaee098, type: 3}
@@ -6862,14 +6887,14 @@ MonoBehaviour:
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 5
   bodyMassCenter: {x: 0, y: 0, z: 0}
-  frontLeftMesh: {fileID: 459413802}
+  frontLeftMesh: {fileID: 578100096}
   frontLeftCollider: {fileID: 44972999}
-  frontRightMesh: {fileID: 1169323119}
+  frontRightMesh: {fileID: 1353952335}
   frontRightCollider: {fileID: 1495512321}
   rearLeftMesh: {fileID: 590398454}
-  rearLeftCollider: {fileID: 296401300}
+  rearLeftCollider: {fileID: 1663356275}
   rearRightMesh: {fileID: 1743785906}
-  rearRightCollider: {fileID: 530196815}
+  rearRightCollider: {fileID: 1492928563}
   useEffects: 0
   RLWParticleSystem: {fileID: 0}
   RRWParticleSystem: {fileID: 0}
