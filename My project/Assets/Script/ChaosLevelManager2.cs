@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 
-public class ChaosLevelManager : MonoBehaviour
+public class ChaosLevelManager2 : MonoBehaviour
 {
     [Header("Score Settings")]
     [Tooltip("Score multiplier: the chaos level added equals the collided object's mass multiplied by this value")]
