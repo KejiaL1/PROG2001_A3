@@ -3128,6 +3128,7 @@ MonoBehaviour:
   gameResultText: {fileID: 777079210}
   carTransform: {fileID: 1674508671}
   fallThresholdY: -10
+  targetSceneName: AfterL3
 --- !u!1 &1696643228
 GameObject:
   m_ObjectHideFlags: 0

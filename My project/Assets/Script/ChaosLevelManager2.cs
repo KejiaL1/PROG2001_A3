@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class ChaosLevelManager2 : MonoBehaviour
 {
@@ -31,6 +33,9 @@ public class ChaosLevelManager2 : MonoBehaviour
     public float fallThresholdY = -10f;  // 汽车掉出场景的 Y 值
 
     private bool gameActive = true;
+
+    public string targetSceneName = "NextScene";
+
 
     void Start()
     {
@@ -76,7 +81,10 @@ public class ChaosLevelManager2 : MonoBehaviour
         if (gameResultText != null)
         {
             if (currentChaosLevel >= targetChaosLevel)
+                {
                 gameResultText.text = "Success! Chaos level achieved!";
+                StartCoroutine(LoadSceneAfterDelay(targetSceneName));
+                }
             else
                 gameResultText.text = "Failed! Insufficient chaos level!";
         }
@@ -117,5 +125,10 @@ public class ChaosLevelManager2 : MonoBehaviour
             UpdateChaosUI();
             Debug.Log("Added chaos: " + addedScore + ", Current chaos level: " + currentChaosLevel);
         }
+    }
+        IEnumerator LoadSceneAfterDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneName);
     }
 }
