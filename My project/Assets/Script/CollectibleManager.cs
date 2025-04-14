@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CollectibleManager : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class CollectibleManager : MonoBehaviour
     public float fallThresholdY = -10f;
 
     private bool gameEnded = false;
+
+    public string targetSceneName = "NextScene";
+
 
     void Start()
     {
@@ -44,6 +49,7 @@ public class CollectibleManager : MonoBehaviour
         if (collectedCount >= totalCollectibles)
         {
             GameWin("Victory! All items collected!");
+            StartCoroutine(LoadSceneAfterDelay(targetSceneName));
         }
     }
 
@@ -73,5 +79,10 @@ public class CollectibleManager : MonoBehaviour
         {
             failMessageText.text = message;
         }
+    }
+        IEnumerator LoadSceneAfterDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneName);
     }
 }
