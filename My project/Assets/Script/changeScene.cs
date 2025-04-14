@@ -14,7 +14,6 @@ public class changeScene : MonoBehaviour
     // Load scene by name immediately
     public void LoadMyScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
         StartCoroutine(PlayMySound(sceneName));
     }
 
@@ -28,7 +27,7 @@ public class changeScene : MonoBehaviour
     // Immediate scene load with string parameter
     private IEnumerator PlayMySound(string sceneName)
     {
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);
     }
 }
