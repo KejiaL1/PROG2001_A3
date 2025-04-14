@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class ChaosLevelManager1 : MonoBehaviour
 {
@@ -29,6 +32,7 @@ public class ChaosLevelManager1 : MonoBehaviour
 
     private bool gameActive = true;
 
+    public string targetSceneName = "NextScene";
     void Start()
     {
         if (targetChaosText != null)
@@ -79,7 +83,14 @@ public class ChaosLevelManager1 : MonoBehaviour
                 gameActive = false;
                 if (gameResultText != null)
                     gameResultText.text = "Success! Chaos level achieved!";
+                    StartCoroutine(LoadSceneAfterDelay(targetSceneName));
             }
         }
     }
+    IEnumerator LoadSceneAfterDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneName);
+    }
 }
+
