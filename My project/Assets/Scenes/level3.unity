@@ -3122,7 +3122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947f4a36b5e6fff47b92cc9c8f1569e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreMultiplier: 0.3
+  scoreMultiplier: 0.2
   targetChaosLevel: 1000
   currentChaosLevel: 0
   gameDuration: 60
