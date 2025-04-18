@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -884,26 +884,29 @@ MonoBehaviour:
 
 
 
-    Gameplay Design: Kejia Li
+    Tutor: Viettrung Luong
 
-    Campaign
-    Editor: Kejia Li
+    Gameplay
+    Design: Kejia Li
 
-    Base layer foundation: Kejia Li
+    Campaign Editor: Kejia Li
 
-    UI Design: Shimin
-    Jin
+    Base layer foundation: Kejia
+    Li
+
+    UI Design: Shimin Jin
 
     Page Layout: Shimin Jin
 
-    Scene Style: Shimin Jin
+    Scene Style:
+    Shimin Jin
 
-    Scene Construction:
-    Lehan Zhang
+    Scene Construction: Lehan Zhang
 
     Material Assets: Lehan Zhang
 
-    Tested by: Lehan Zhang'
+    Tested
+    by: Lehan Zhang'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f18608d00248c904ebced81f437bc276, type: 2}
   m_sharedMaterial: {fileID: -3837310117020066169, guid: f18608d00248c904ebced81f437bc276, type: 2}
