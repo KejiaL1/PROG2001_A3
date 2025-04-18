@@ -1285,6 +1285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &176220907
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1566,6 +1568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &303671280
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1834,6 +1838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &326244855
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2088,7 +2094,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f632e2ace80a32e47a2c531f64901a50, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4214,6 +4220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &526479581
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4441,6 +4449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &557155516
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4662,6 +4672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!1 &655306428
 GameObject:
   m_ObjectHideFlags: 0
@@ -6178,6 +6190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1044702873
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7743,6 +7757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1319850976
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7998,6 +8014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1422638835
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9032,6 +9050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1562524090
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9223,6 +9243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1574978530
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9709,7 +9731,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 75fa27e467267c74f91f1f6f4e74ff88, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9976,6 +9998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1723655238
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10676,6 +10700,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1856452750
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11020,6 +11046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 45
+  collectSound: {fileID: 8300000, guid: e26b12344a8fdd2439361d014323be33, type: 3}
+  volume: 1
 --- !u!135 &1945533192
 SphereCollider:
   m_ObjectHideFlags: 0
