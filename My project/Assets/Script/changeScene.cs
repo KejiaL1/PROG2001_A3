@@ -20,14 +20,14 @@ public class changeScene : MonoBehaviour
     // Delayed scene load with int parameter (1.5s wait)
     private IEnumerator PlayMySound(int sceneNumber)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(sceneNumber);
     }
 
     // Immediate scene load with string parameter
     private IEnumerator PlayMySound(string sceneName)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(sceneName);
     }
 }
