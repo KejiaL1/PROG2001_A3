@@ -799,6 +799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diorama
       objectReference: {fileID: 0}
+    - target: {fileID: 5984852858064665764, guid: 4a62c74f83f1da34d8ccbba62ce3d0a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6124178296754475210, guid: 4a62c74f83f1da34d8ccbba62ce3d0a0, type: 3}
       propertyPath: m_BreakForce
       value: 30000
@@ -1985,6 +1989,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 901333271, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2048,6 +2056,10 @@ PrefabInstance:
     - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_Name
       value: Prometheus
+      objectReference: {fileID: 0}
+    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4402756320706410831, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalPosition.y
